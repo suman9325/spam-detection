@@ -73,4 +73,4 @@ prediction = model.predict(vectorized_input)
 probabilities = model.predict_proba(vectorized_input)
 
 print(f"Classification Label: {'Spam' if prediction[0] == 1 else 'Ham'}")
-print(f"Spam Probability: {probabilities[0][1]:.4f}")```
+print(f"Spam Probability: {probabilities[0][1]:.4f}")
