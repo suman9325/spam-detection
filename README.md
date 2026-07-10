@@ -66,11 +66,11 @@ jupyter notebook SpamDetection.ipynb
 You can seamlessly pass fresh string arrays to test the model's live logic block inside the notebook:
 
 # Custom Inference Sandbox
-sample_email = ["Meeting tomorrow at 11 am."]
+`sample_email = ["Meeting tomorrow at 11 am."]
 vectorized_input = vectorizer.transform(sample_email)
 
 prediction = model.predict(vectorized_input)
 probabilities = model.predict_proba(vectorized_input)
 
 print(f"Classification Label: {'Spam' if prediction[0] == 1 else 'Ham'}")
-print(f"Spam Probability: {probabilities[0][1]:.4f}")
+print(f"Spam Probability: {probabilities[0][1]:.4f}")`
